@@ -1,0 +1,63 @@
+.team {
+  padding-top: 80px;
+  &-blok{
+    h2{
+      margin-bottom: 40px;
+      font-family: $rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 38px;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: $dark-blue;
+    }
+    &-item{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      &__cart{
+        min-width: 267px;
+        text-align: center;
+        margin-bottom: 40px;
+        img{
+          margin-bottom: 16px;
+          width: 160px;
+        }
+        p{
+          font-family: $rubik;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 150%;
+          text-align: center;
+          color: $purple;
+          margin-bottom: 4px;
+        }
+        span{
+          font-family: $rubik;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 130%;
+          text-align: center;
+          color: $gray;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 563px){
+  .team{
+    &-blok{
+      &-item{
+        &__cart{
+          min-width: unset;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
