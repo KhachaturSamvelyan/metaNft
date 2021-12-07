@@ -1,0 +1,41 @@
+{
+  "addCssAfter": [],
+  "addCssBefore": [
+    "./src/scss/variables.scss"
+  ],
+  "addImages": [
+    "./src/img/*.{jpg,jpeg,gif,png,svg,ico}"
+  ],
+  "addJsAfter": [
+    "./src/js/global-script.js",
+    "./src/js/util.js"
+  ],
+  "addJsBefore": [
+    "./node_modules/jquery/dist/jquery.min.js",
+    "./node_modules/svg4everybody/dist/svg4everybody.js",
+    "./node_modules/object-fit-images/dist/ofi.js"
+  ],
+  "blocks": {
+    "page": [],
+    "sprite-svg": [],
+    "header": [],
+    "main": [],
+    "possibilities": [],
+    "features": [],
+    "team": [],
+    "partners": [],
+    "token": [],
+    "roadmap": [],
+    "form": [],
+    "footer": [],
+    "modal": []
+  },
+  "copiedCss": [],
+  "copiedJs": [],
+  "dirs": {
+    "blocksDirName": "blocks",
+    "buildPath": "./build/",
+    "srcPath": "./src/"
+  },
+  "singleCompiled": []
+}

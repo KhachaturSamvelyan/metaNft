@@ -1,0 +1,137 @@
+.roadmap {
+  padding: 100px 0 70px;
+  &-blok{
+    h2{
+      margin-bottom: 64px;
+      font-family: $rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 38px;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: $dark-blue;
+    }
+    &_item{
+      position: relative;
+      max-width: 849px;
+      margin: 0 auto;
+      .owl-dots{
+        margin-top: 72px;
+        text-align: center;
+        .owl-dot{
+          width: 6px;
+          height: 6px;
+          border-radius: 100%;
+          background: rgba(51, 76, 140, 0.33);
+          margin-right: 11px;
+        }
+        .active{
+            width: 12px;
+            height: 12px;
+            background-color: rgba(51, 76, 140, 1);
+        }
+      }
+
+    }
+    .owl-carousel{
+      .owl-item{
+        max-width: 267px;
+        img{
+          width: 100%;
+          box-shadow: 0px 5.48837px 5.48837px rgba(22, 38, 79, 0.06);
+          backdrop-filter: blur(16.5612px);
+          border-radius: 12px;
+          margin-bottom: 16px;
+        }
+        p{
+          margin-bottom: 16px;
+          font-family: $rubik;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 25px;
+          line-height: 140%;
+          letter-spacing: 0.01em;
+          color: $dark-blue;
+        }
+        ul{
+          li{
+            margin-bottom: 9px;
+            font-family: $rubik;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 160%;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            color: $dark-blue;
+            position: relative;
+            padding-left: 14px;
+            &:after{
+              position: absolute;
+              content: "";
+              width: 6px;
+              height: 6px;
+              background: $dark-blue;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%)
+            }
+          }
+        }
+      }
+    }
+    .owl-nav{
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: space-between;
+      .owl-next{
+        position: relative;
+        right: -150px;
+      }
+      .owl-prev{
+        position: relative;
+        left: -150px;
+      }
+      }
+    }
+  }
+  
+.owl-nav .owl-prev.disabled, .owl-nav .owl-next.disabled{
+  opacity: 0.5;
+}
+
+
+
+@media (max-width: 1240px){
+  .roadmap{
+    padding: 30px 0; 
+    &-blok{
+      h2{
+        margin-bottom: 32px;
+      }
+      .owl-nav{
+        display: none;
+      }
+      .owl-carousel{
+        max-width: 100%;
+        .owl-item{
+          max-width: 100%;
+          img{
+            object-fit: cover;
+          }
+        }
+      }
+     &_item{
+       .owl-dots{
+         margin-top: 25px;
+       }
+     }
+    }
+  }
+}

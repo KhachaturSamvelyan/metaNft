@@ -1,0 +1,335 @@
+.token {
+  background-image: url("../img/token_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  &-blok{
+    h2{
+      margin-bottom: 16px;
+      font-family: $rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 38px;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: $dark-blue;
+    }
+    p{
+      font-family: $rubik;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 160%;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: $dark-blue;
+      max-width: 751px;
+      margin: 0 auto;
+    }
+    &-info{
+      margin-top: 64px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 64px;
+      &__p{
+        &:nth-child(3){
+          align-self: center;
+        }
+        p{
+          font-family: $rubik;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 48px;
+          line-height: 110%;
+          color: $dark-blue;
+          margin-bottom: 16px;
+        }
+        span{
+          font-family: $rubik;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 25px;
+          line-height: 140%;
+          letter-spacing: 0.01em;
+          color: $dark-blue;
+        }
+      }
+    }
+    &-chart{
+      background: linear-gradient(180deg, #FDFDFD 0%, #EBF1FF 100%);
+      box-shadow: 0px 100px 80px rgba(8, 26, 34, 0.07), 0px 41.7776px 33.4221px rgba(8, 26, 34, 0.0503198), 0px 22.3363px 17.869px rgba(8, 26, 34, 0.0417275), 0px 12.5216px 10.0172px rgba(8, 26, 34, 0.035), 0px 6.6501px 5.32008px rgba(8, 26, 34, 0.0282725), 0px 2.76726px 2.21381px rgba(8, 26, 34, 0.0196802);
+      border-radius: 12px;
+      padding: 80px 0;
+      margin: 0  auto 64px;
+      max-width: 946px;
+      &-item{
+        max-width: 752px;
+        width: 100%;
+        margin:  auto;
+        &__top{
+          margin-bottom: 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          p{
+            font-family: $rubik;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: center;
+            color: $dark-blue;
+          }
+          div{
+            width: 48px;
+          }
+          .red{
+            background: #FA6650;
+            height: 300px;
+          }
+          .blue{
+            height: 150px;
+            background: #5B6ADB;
+          }
+          .purple{
+            height: 100px;
+            background: #9660DA;
+          }
+          .pink{
+            height: 33px;
+            background: #FF7480;
+          }
+          .yellow{
+            height: 50px;
+            background: #EDBF12;
+          }
+          .green{
+            height: 200px;
+            background: #749B18;
+          }
+          .blueLight{
+            height: 100px;
+            background: #62CBF0;
+          }
+          .lightGreen{
+            height: 67px;
+            background: #2C962A;
+          }
+
+        }
+        &__bottom{
+          ul{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li{
+              width: 376px;
+              font-family: $rubik;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              letter-spacing: 0.01em;
+              color: $dark-blue;
+              margin-bottom: 24px;
+              position: relative;
+              padding-left: 28px;
+              display: flex;
+              align-items: center;
+              &:after{
+                content: "";
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+            .red{
+              &:after{
+                background: #FA6650;
+              }
+            }
+            .blue{
+              &:after{
+                background: #5B6ADB;;
+              }
+            }
+            .purple{
+              &:after{
+                background: #9660DA;
+              }
+            }
+            .pink{
+              &:after{
+                background:  #FF7480;
+              }
+            }
+            .yellow{
+              &:after{
+                background:  #EDBF12;
+              }
+            }
+            .green{
+              &:after{
+                background:  #749B18;
+              }
+            }
+            .blueLight{
+              &:after{
+                background:  #62CBF0;
+              }
+            }
+            .lightGreen{
+              &:after{
+                background:  #2C962A;
+              }
+            }
+            
+          }
+        }
+      }
+    }
+    &-bottom-text{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      p{
+        font-family: $rubik;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 160%;
+        letter-spacing: 0.01em;
+        color: $dark-blue;
+        text-align: left;
+        max-width: 358px;
+      }
+    }
+    a{
+      font-family: $rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 100%;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: $dark-blue;
+      text-align: center;
+      display: block;
+      transition: 0.3s;
+      &:hover{
+        color: $purple;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 1140px){
+  .token{
+    &-blok{
+      &-info{
+        flex-direction: column;
+        justify-content: center;
+        svg{
+          margin: 25px auto;
+          
+        }
+        &__p{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 820px){
+  .token{
+    padding: 50px 0;
+    &-blok{
+      h2{
+        font-size: 25px;
+      }
+      p{
+        font-size: 12px;
+        max-width: 100%;
+      }
+      &-info{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        flex-direction: column;
+        justify-content: center;
+        svg{
+          margin: 25px auto;
+        }
+        &__p{
+          text-align: center;
+          p{
+            font-size: 28px;
+          }
+          span{
+            font-size: 20px;
+          }
+        }
+      }
+      &-chart{
+        padding: 20px 0;
+        max-width: 100%;
+        &-item{
+          max-width: 95%;
+          &__bottom{
+            ul{
+              li{
+                width: 47%;
+              }
+            }
+          }
+          &__top{
+            margin-bottom: 20px;
+            div{
+              width: 30px;
+            }
+          }
+        }
+      }
+      &-bottom-text{
+        flex-direction: column;
+        justify-content: center;
+        p{
+          margin-bottom: 20px;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 364px){
+  .token{
+    &-blok{
+      &-info{
+        svg{
+          display: none;
+        }
+        &__p{
+          text-align: center;
+          p{
+            font-size: 28px;
+          }
+          span{
+            font-size: 20px;
+          }
+        }
+      }
+      
+    }
+  }
+}
