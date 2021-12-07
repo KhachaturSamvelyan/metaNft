@@ -88,7 +88,7 @@ $(document).ready(function(){
 
       $(document).click((event) => {
         if (!$(event.target).closest('.lang').length) {
-            $(".lang_modal").toggle();
+            $(".lang_modal").hide();
         }        
       });
   });

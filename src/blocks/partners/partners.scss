@@ -20,13 +20,13 @@
     margin-bottom: 40px;
   }
   &-blok{
-    height: 104px;
     max-width: 946px;
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     &-item{
       display: flex;
       align-items: center;
@@ -36,30 +36,24 @@
       height: 96px;
       width: 170px;
       transition: 0.3s;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      background-color: black;
       &:first-child{
-        background-color: black;
         img{
-          opacity: 1;
+          opacity: 0.5;
           background: black;
           mix-blend-mode: unset;
+          background-color: black;
         }
       }
       img{
-        background-blend-mode: screen, normal;
-        mix-blend-mode: multiply;
         opacity: 0.5;
+        width: 100%;
       }
-      .part0{
-        width: 152px;
-      }
-      .part1{
-        width: 140px;
-      }
-      .part2{
-        width: 100px;
-      }
+     
       &:hover{
-        height: 104px;
+        
        
         img{
           opacity: 1;
@@ -81,6 +75,8 @@
       flex-wrap: wrap;
       justify-content: space-around;
       &-item{
+     
+        margin-right: 0;
         margin-bottom: 20px;
       }
     }
